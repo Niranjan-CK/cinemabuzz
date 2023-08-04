@@ -14,7 +14,7 @@ export const Search=({apiPath})=>{
                 <p className="text-3xl text-green-500 dark:text-white">
                     { movies.length === 0 ? `No result found for ${queryTerm}`:`Result for ${queryTerm}` }
                 </p>
-               <div className="flex justify-start flex-wrap">
+               <div className="flex justify-start flex-wrap other:justify-evenly">
                 { movies &&
                     movies.map((movie)=>(
                         <Card key={movie.id} movie={movie}/>
